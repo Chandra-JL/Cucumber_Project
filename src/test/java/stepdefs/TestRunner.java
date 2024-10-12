@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 (
 		//monochrome = true, // if there are junk characters on console, to remove those random characters this plugin is used.
 		
-		plugin= {"pretty", "html:target/html-cucumber"}, // not mandatory
+		plugin= {"pretty", "html:target/html-cucumber","json:target/cucumber.json"}, // not mandatory
 		features="src/test/java/features", //mandatory
 		glue="stepdefs", //mandatory
 		tags = {"@Regression"} //- to run single tag
